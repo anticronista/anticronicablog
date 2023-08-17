@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Configurar hugo en docker | Anticronica</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Con este procedimiento podremos crear nuestro blog dentro de un contenedor sin instalar Hugo en nuestro host. https://gohugo.io/
+Correr el Docker Hay que adaptar el volumen que montamos al path que queramos usar para que se genere el sitio
+docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest Crear la estructura del sitio docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest new site NombreDelBlog Esto creará una estructura similar a:
+NombreDelBlog/ ├── archetypes/ │ └── default.">
+    <meta name="generator" content="Hugo 0.111.3">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Configurar hugo en docker" />
+<meta property="og:description" content="Con este procedimiento podremos crear nuestro blog dentro de un contenedor sin instalar Hugo en nuestro host. https://gohugo.io/
+Correr el Docker Hay que adaptar el volumen que montamos al path que queramos usar para que se genere el sitio
+docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest Crear la estructura del sitio docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest new site NombreDelBlog Esto creará una estructura similar a:
+NombreDelBlog/ ├── archetypes/ │ └── default." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anticronista.github.io/posts/configurar_hugo_docker/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-16T23:07:53+00:00" />
+<meta property="article:modified_time" content="2023-08-16T23:07:53+00:00" />
+<meta itemprop="name" content="Configurar hugo en docker">
+<meta itemprop="description" content="Con este procedimiento podremos crear nuestro blog dentro de un contenedor sin instalar Hugo en nuestro host. https://gohugo.io/
+Correr el Docker Hay que adaptar el volumen que montamos al path que queramos usar para que se genere el sitio
+docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest Crear la estructura del sitio docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest new site NombreDelBlog Esto creará una estructura similar a:
+NombreDelBlog/ ├── archetypes/ │ └── default."><meta itemprop="datePublished" content="2023-08-16T23:07:53+00:00" />
+<meta itemprop="dateModified" content="2023-08-16T23:07:53+00:00" />
+<meta itemprop="wordCount" content="316">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Configurar hugo en docker"/>
+<meta name="twitter:description" content="Con este procedimiento podremos crear nuestro blog dentro de un contenedor sin instalar Hugo en nuestro host. https://gohugo.io/
+Correr el Docker Hay que adaptar el volumen que montamos al path que queramos usar para que se genere el sitio
+docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest Crear la estructura del sitio docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest new site NombreDelBlog Esto creará una estructura similar a:
+NombreDelBlog/ ├── archetypes/ │ └── default."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white DEV">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Anticronica
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://twitter.com/anticronista" target="_blank" rel="noopener" class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" aria-label="follow on Twitter——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://twitter.com/share?url=https://anticronista.github.io/posts/configurar_hugo_docker/&amp;text=Configurar%20hugo%20en%20docker" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Configurar hugo en docker</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-08-16T23:07:53Z">August 16, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Con este procedimiento podremos crear nuestro blog dentro de un contenedor sin instalar Hugo en nuestro host. <a href="https://gohugo.io/">https://gohugo.io/</a></p>
+<h1 id="correr-el-docker">Correr el Docker</h1>
+<p>Hay que adaptar el volumen que montamos al path que queramos usar para que se genere el sitio</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>docker run --rm -it  -v /path/to/blog/data:/src klakegg/hugo:latest
+</span></span></code></pre></div><h1 id="crear-la-estructura-del-sitio">Crear la estructura del sitio</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>docker run --rm -it  -v /path/to/blog/data:/src klakegg/hugo:latest new site NombreDelBlog
+</span></span></code></pre></div><p>Esto creará una estructura similar a:</p>
+<pre tabindex="0"><code>NombreDelBlog/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── content/
+├── data/
+├── layouts/
+├── public/
+├── static/
+├── themes/
+└── hugo.toml
+</code></pre><h1 id="configurar-el-tema-del-sitio">Configurar el tema del sitio</h1>
+<p>Fuera del contenedor, accedo a la carpeta del sitio y con git clono el tema que requiera: Por ejemplo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></div><p>Y configuro el tema en el archivo: data/NOMBRE-BLOG-CREADO/hugo.toml</p>
+<p>El archivo tendría un contenido como:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.com/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;es-es&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Anticronica&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;ananke&#39;</span>
+</span></span></code></pre></div><h2 id="hay-más-temas-en">Hay más temas en:</h2>
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+<h1 id="levantar-el-servidor">Levantar el servidor</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>docker run --rm -it  -v /path/to/blog/data/NOMBRE-BLOG-CREADO:/src -p 1313:1313 klakegg/hugo:latest server
+</span></span><span style="display:flex;"><span>docker run --rm -it  -v /path/to/blog/data/anticronicablog:/src -p 1313:1313 --name hugoblog klakegg/hugo:latest server
+</span></span><span style="display:flex;"><span>#<span style="color:#75715e"># Levantar en modo desatendido</span>
+</span></span><span style="display:flex;"><span>docker run --rm -d -v /path/to/blog/data/anticronicablog:/src -p 1313:1313 --name hugoblog klakegg/hugo:latest server
+</span></span></code></pre></div><h1 id="conexión-a-la-terminal-del-contenedor">Conexión a la terminal del contenedor</h1>
+<p>Si queremos ejecutar algún comando en esta instancia a través de la terminal podemos hacerlo con:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>docker exec -it hugoblog /bin/sh
+</span></span></code></pre></div><h1 id="interactuar-con-el-contenedor-crear-un-post">Interactuar con el contenedor: crear un post.</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>docker exec -it hugoblog hugo new posts/test_post1.md
+</span></span></code></pre></div><h1 id="test-de-como-se-ve-y-se-inserta-una-imagen">Test de como se ve y se inserta una imagen:</h1>
+<p>Lo recomendable es copiar el contenido estático en la carpeta &lsquo;&lsquo;static&rsquo;&rsquo; y desde ahí referenciarlo desde md como:</p>
+<pre tabindex="0"><code>![Caption de la imagen1: Across columns](/ksnip_20230817-021535.png)
+</code></pre><p><img src="/ksnip_20230817-021535.png" alt="Caption de la imagen1: Across columns"></p>
+<h1 id="test-de-videos-de-youtube">Test de videos de youtube</h1>
+<p>Según lo que he podido leer por ahí, para agregar un vide de youtube con una miniatura de su imagen, puedes usar el siguiente código MD:</p>
+<pre tabindex="0"><code>[![Video](https://img.youtube.com/vi/ODjkWlu_OW0/maxresdefault.jpg)](https://www.youtube.com/watch?v=ODjkWlu_OW0)
+</code></pre><p>Esto daría como resultado algo así:
+<a href="https://www.youtube.com/watch?v=vN4Vc9T8QQc"><img src="https://img.youtube.com/vi/vN4Vc9T8QQc/maxresdefault.jpg" alt="Video"></a></p>
+<p>A propósito de esto se puede revisar: <a href="https://gist.github.com/bitsurgeon/acd769ae3236c48a433e0acb11784c2e">https://gist.github.com/bitsurgeon/acd769ae3236c48a433e0acb11784c2e</a> para ampliar el detalle anterior.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://anticronista.github.io/" >
+    &copy;  Anticronica 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://twitter.com/anticronista" target="_blank" rel="noopener" class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" aria-label="follow on Twitter——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
