@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anticronica</title>
-    <link>https://anticronista.github.io/</link>
-    <description>Recent content on Anticronica</description>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    <lastBuildDate>Wed, 16 Aug 2023 23:07:53 +0000</lastBuildDate><atom:link href="https://anticronista.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 23:07:53 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configurar hugo en docker</title>
-      <link>https://anticronista.github.io/posts/configurar_hugo_docker/</link>
+      <link>/posts/configurar_hugo_docker/</link>
       <pubDate>Wed, 16 Aug 2023 23:07:53 +0000</pubDate>
       
-      <guid>https://anticronista.github.io/posts/configurar_hugo_docker/</guid>
+      <guid>/posts/configurar_hugo_docker/</guid>
       <description>Con este procedimiento podremos crear nuestro blog dentro de un contenedor sin instalar Hugo en nuestro host. https://gohugo.io/
 Correr el Docker Hay que adaptar el volumen que montamos al path que queramos usar para que se genere el sitio
 docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest Crear la estructura del sitio docker run --rm -it -v /path/to/blog/data:/src klakegg/hugo:latest new site NombreDelBlog Esto creará una estructura similar a:
@@ -21,19 +20,19 @@ NombreDelBlog/ ├── archetypes/ │ └── default.</description>
     
     <item>
       <title>Test_post2</title>
-      <link>https://anticronista.github.io/posts/test_post2/</link>
+      <link>/posts/test_post2/</link>
       <pubDate>Wed, 16 Aug 2023 22:06:07 +0000</pubDate>
       
-      <guid>https://anticronista.github.io/posts/test_post2/</guid>
+      <guid>/posts/test_post2/</guid>
       <description>HELLOWORLD (2º POST) </description>
     </item>
     
     <item>
       <title>Test_post1</title>
-      <link>https://anticronista.github.io/posts/test_post1/</link>
+      <link>/posts/test_post1/</link>
       <pubDate>Wed, 16 Aug 2023 22:03:25 +0000</pubDate>
       
-      <guid>https://anticronista.github.io/posts/test_post1/</guid>
+      <guid>/posts/test_post1/</guid>
       <description>¡Hola este es mi primer post!</description>
     </item>
     

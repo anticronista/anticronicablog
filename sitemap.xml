@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://anticronista.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2023-08-16T23:07:53+00:00</lastmod>
   </url><url>
-    <loc>https://anticronista.github.io/posts/configurar_hugo_docker/</loc>
+    <loc>/posts/configurar_hugo_docker/</loc>
     <lastmod>2023-08-16T23:07:53+00:00</lastmod>
   </url><url>
-    <loc>https://anticronista.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-08-16T23:07:53+00:00</lastmod>
   </url><url>
-    <loc>https://anticronista.github.io/posts/test_post2/</loc>
+    <loc>/posts/test_post2/</loc>
     <lastmod>2023-08-16T22:06:07+00:00</lastmod>
   </url><url>
-    <loc>https://anticronista.github.io/posts/test_post1/</loc>
+    <loc>/posts/test_post1/</loc>
     <lastmod>2023-08-16T22:03:25+00:00</lastmod>
   </url><url>
-    <loc>https://anticronista.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://anticronista.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
